@@ -15,7 +15,6 @@ final class CatalogViewController: UIViewController, CatalogViewProtocol {
         let button = UIButton(type: .system)
         button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         button.setTitle("finish flow", for: .normal)
-//        button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .green
         button.layer.cornerRadius = 16
         return button
