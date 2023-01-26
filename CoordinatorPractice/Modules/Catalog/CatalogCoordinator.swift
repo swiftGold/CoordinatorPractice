@@ -20,8 +20,13 @@ final class CatalogCoordinator: BaseCoordinator & CoordinatorOutput {
     }
     
     override func start() {
-        let catalogViewController = diContainer.makeCatalogViewController(router: self )
-        router.push(catalogViewController, animated: true)
+        //MARK: - Запуск контроллера через координатор без вайпера
+//        let catalogViewController = diContainer.makeCatalogViewController(router: self )
+//        router.push(catalogViewController, animated: true)
+        
+        //MARK: - Запуск контроллера через вайпер
+        let viewController = diContainer.makeViewController(router: self)
+        router.setRoot(viewController)
     }
 }
 
@@ -30,3 +35,5 @@ extension CatalogCoordinator: CatalogRouterInput {
         onFinish?()
     }
 }
+
+extension CatalogCoordinator: RouterInput {}

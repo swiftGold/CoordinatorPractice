@@ -31,7 +31,6 @@ final class CatalogViewController: UIViewController, CatalogViewProtocol {
         finishFlow.frame = CGRect(x: 150, y: 400, width: 100, height: 50)
     }
     
-    
     @objc func didTapButton() {
         router?.finishFlow()
     }

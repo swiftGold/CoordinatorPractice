@@ -29,6 +29,12 @@ extension CatalogDIContainer {
         return viewController
     }
     
+    func makeViewController(router: RouterInput) -> UIViewController {
+        let dependency = Dependencies(networkService: dependencies.catalogNetworkService)
+        let assembly = Assembly(router: router, dependencies: dependency)
+        return assembly.build()
+    }
+    
     //    func makeSearchAdressViewController(router: SearchAdressRouterInput) -> UIViewController {}
     //
     //    func makeRestaurantsViewController(router: RestaurantsRouteInput) -> UIViewController {}

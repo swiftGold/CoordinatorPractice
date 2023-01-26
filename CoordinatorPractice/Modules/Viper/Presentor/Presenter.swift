@@ -16,20 +16,23 @@ final class Presenter {
 
 extension Presenter: ViewOutput {
     func viewDidLoad() {
-        
+        print(#function)
     }
     
     func didTapButton() {
+        print(#function)
         interactor.fetchData()
     }
 }
 
 extension Presenter: InteractorOutput {
     func didSucsessFetchData(viewData: Data) {
+        print(#function)
         router.finishFlow()
     }
     
     func didFailureFetchData() {
+        print(#function)
         view.updateView()
     }
 }

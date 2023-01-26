@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol InteractorOutput: AnyObject {
+    func didSucsessFetchData(viewData: Data)
+    func didFailureFetchData() 
+}

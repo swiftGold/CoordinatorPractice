@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540FF102297E8CA2002624FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF101297E8CA2002624FA /* ViewController.swift */; };
+		540FF104297E8CB5002624FA /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF103297E8CB5002624FA /* Presenter.swift */; };
+		540FF106297E8CC8002624FA /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF105297E8CC8002624FA /* Interactor.swift */; };
+		540FF108297E8CD5002624FA /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF107297E8CD5002624FA /* Assembly.swift */; };
+		540FF10A297E8CEA002624FA /* InteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF109297E8CEA002624FA /* InteractorInput.swift */; };
+		540FF10C297E8D2A002624FA /* InteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF10B297E8D2A002624FA /* InteractorOutput.swift */; };
+		540FF10E297E8D32002624FA /* ViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF10D297E8D32002624FA /* ViewInput.swift */; };
+		540FF110297E8D3B002624FA /* ViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF10F297E8D3B002624FA /* ViewOutput.swift */; };
+		540FF112297E8D4B002624FA /* RouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540FF111297E8D4B002624FA /* RouterInput.swift */; };
 		5495F3372977F9B600276C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495F3362977F9B600276C8A /* AppDelegate.swift */; };
 		5495F3392977F9B600276C8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495F3382977F9B600276C8A /* SceneDelegate.swift */; };
 		5495F33B2977F9B600276C8A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5495F33A2977F9B600276C8A /* MapViewController.swift */; };
@@ -27,6 +36,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		540FF101297E8CA2002624FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		540FF103297E8CB5002624FA /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		540FF105297E8CC8002624FA /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		540FF107297E8CD5002624FA /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		540FF109297E8CEA002624FA /* InteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInput.swift; sourceTree = "<group>"; };
+		540FF10B297E8D2A002624FA /* InteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorOutput.swift; sourceTree = "<group>"; };
+		540FF10D297E8D32002624FA /* ViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInput.swift; sourceTree = "<group>"; };
+		540FF10F297E8D3B002624FA /* ViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOutput.swift; sourceTree = "<group>"; };
+		540FF111297E8D4B002624FA /* RouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInput.swift; sourceTree = "<group>"; };
 		5495F3332977F9B600276C8A /* CoordinatorPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5495F3362977F9B600276C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5495F3382977F9B600276C8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +77,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		540FF100297E8C83002624FA /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				540FF113297E8D59002624FA /* View */,
+				540FF116297E8D82002624FA /* Presentor */,
+				540FF114297E8D66002624FA /* Interactor */,
+				540FF115297E8D78002624FA /* Router */,
+				540FF117297E8DA1002624FA /* Assembly */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		540FF113297E8D59002624FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				540FF101297E8CA2002624FA /* ViewController.swift */,
+				540FF10D297E8D32002624FA /* ViewInput.swift */,
+				540FF10F297E8D3B002624FA /* ViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		540FF114297E8D66002624FA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				540FF105297E8CC8002624FA /* Interactor.swift */,
+				540FF109297E8CEA002624FA /* InteractorInput.swift */,
+				540FF10B297E8D2A002624FA /* InteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		540FF115297E8D78002624FA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				540FF111297E8D4B002624FA /* RouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		540FF116297E8D82002624FA /* Presentor */ = {
+			isa = PBXGroup;
+			children = (
+				540FF103297E8CB5002624FA /* Presenter.swift */,
+			);
+			path = Presentor;
+			sourceTree = "<group>";
+		};
+		540FF117297E8DA1002624FA /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				540FF107297E8CD5002624FA /* Assembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		5495F32A2977F9B600276C8A = {
 			isa = PBXGroup;
 			children = (
@@ -78,9 +152,9 @@
 		5495F3352977F9B600276C8A /* CoordinatorPractice */ = {
 			isa = PBXGroup;
 			children = (
+				5495F34A2977FBA400276C8A /* Applications */,
 				5495F34B297800C800276C8A /* Core */,
 				5495F34C297800D100276C8A /* Modules */,
-				5495F34A2977FBA400276C8A /* Applications */,
 			);
 			path = CoordinatorPractice;
 			sourceTree = "<group>";
@@ -114,8 +188,9 @@
 		5495F34C297800D100276C8A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				5495F362297963C000276C8A /* Catalog */,
 				5495F361297963B500276C8A /* Map */,
+				5495F362297963C000276C8A /* Catalog */,
+				540FF100297E8C83002624FA /* Viper */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -227,19 +302,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				5495F3662979641900276C8A /* CatalogViewController.swift in Sources */,
+				540FF110297E8D3B002624FA /* ViewOutput.swift in Sources */,
 				5495F35C29793A5B00276C8A /* AppDIContainer.swift in Sources */,
 				5495F356297803A100276C8A /* Router.swift in Sources */,
+				540FF10C297E8D2A002624FA /* InteractorOutput.swift in Sources */,
+				540FF112297E8D4B002624FA /* RouterInput.swift in Sources */,
+				540FF10A297E8CEA002624FA /* InteractorInput.swift in Sources */,
+				540FF104297E8CB5002624FA /* Presenter.swift in Sources */,
 				5495F34E297800EA00276C8A /* AppCoordinator.swift in Sources */,
 				5495F3602979435C00276C8A /* MapDIContainer.swift in Sources */,
 				5495F3522978016400276C8A /* BaseCoordinator.swift in Sources */,
 				5495F35A29780E5400276C8A /* MapCoordinator.swift in Sources */,
 				5495F33B2977F9B600276C8A /* MapViewController.swift in Sources */,
+				540FF108297E8CD5002624FA /* Assembly.swift in Sources */,
 				5495F358297803DC00276C8A /* NavigationRouter.swift in Sources */,
+				540FF10E297E8D32002624FA /* ViewInput.swift in Sources */,
 				5495F3542978032C00276C8A /* CoordinatorOutput.swift in Sources */,
 				5495F3502978010700276C8A /* Coordinator.swift in Sources */,
+				540FF106297E8CC8002624FA /* Interactor.swift in Sources */,
 				5495F3372977F9B600276C8A /* AppDelegate.swift in Sources */,
 				5495F35E29793D4900276C8A /* CatalogCoordinator.swift in Sources */,
 				5495F3682979650D00276C8A /* CatalogDIContainer.swift in Sources */,
+				540FF102297E8CA2002624FA /* ViewController.swift in Sources */,
 				5495F3392977F9B600276C8A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

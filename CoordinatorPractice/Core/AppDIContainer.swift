@@ -42,9 +42,17 @@ extension AppDIContainer {
     }
 }
 
-protocol Networkable {}
+import Foundation
 
-final class NetworkService: Networkable {}
+protocol Networkable {
+    func method() throws -> Data
+}
+
+final class NetworkService: Networkable {
+    func method() throws -> Data {
+        return Data()
+    }
+}
 
 protocol Storageble {}
 
